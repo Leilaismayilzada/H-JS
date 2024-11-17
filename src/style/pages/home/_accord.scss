@@ -1,0 +1,38 @@
+.accord_left_side{
+    h3{
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 70px;
+    }
+
+}
+
+.accordion{
+    .accordion-item{
+        
+            border: none;
+        border-bottom: 2px solid black;
+        
+        button{
+            &:hover{
+                color: $orange;
+            }  
+            line-height: 50px;
+            transition: 0.3s ease-in-out;     
+            font-size: 24px;
+             outline: none;
+             font-weight: 600;
+            
+        }
+        #collapseOne , #collapseTwo , #collapseThree{
+            strong{
+                font-size: 18px;
+                word-spacing: 1px;
+                line-height: 30px;
+            }
+            
+        }
+       
+    }
+    
+}

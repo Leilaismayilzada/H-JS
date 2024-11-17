@@ -1,0 +1,264 @@
+#men {
+    background-color: $black_color;
+    color: white;
+    padding: 10px 50px;
+    overflow: hidden;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+
+}
+
+.men_frame {
+    border: 1px solid rgba(255, 250, 240, 0.77);
+    border-radius: 8px;
+    box-shadow: rgba(255, 255, 255, 0.824) 0px 7px 29px 0px;
+    max-width: 100%;
+    width: 100%;
+}
+
+.men_text_side {
+    overflow: hidden;
+    padding: 70px 30px;
+
+    h1 {
+        font-size: 64px;
+    }
+
+    p {
+        margin-top: 30px;
+        margin-bottom: 0px;
+        color: #CBCBCB;
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    @media (max-width:1000px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+}
+
+
+
+.men_img_side {
+    width: 100%;
+
+    img {
+        @extend%base_img;
+    }
+
+    @media (max-width:900px) {
+        display: none;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        max-width: 100%;
+
+
+
+    }
+
+}
+
+.platform_text_side__button1 {
+    @include Flexible(start, start, row, wrap, 30px);
+    margin-left: 130px;
+    max-width: 100%;
+    overflow: hidden;
+
+    @media (max-width:1000px) {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .btn_first {
+        border-radius: 30px 30px;
+        width: 250px;
+        border: none;
+        background-color: $orange;
+        transition: 0.1s ease-in-out;
+        padding: 17px 0;
+
+        p {
+            line-height: 20px;
+            font-weight: 600;
+
+        }
+
+        &:hover {
+            background-color: $yellow;
+        }
+
+    }
+
+    .btn_second {
+        border-radius: 30px 30px;
+        width: 250px;
+        border: none;
+        background-color: white;
+        transition: 0.1s ease-in-out;
+        padding: 17px 0;
+
+        p {
+            line-height: 20px;
+            font-weight: 600;
+        }
+
+        &:hover {
+            background-color: $yellow;
+        }
+    }
+}
+
+
+#ready {
+    padding: 96px 136px;
+    background-color: #1e1c1b;
+}
+
+.image {
+    background-image: url(https://outgrid.uicore.co/elearning/wp-content/uploads/sites/5/2023/06/eLearning-CTA-Image.webp);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 8px;
+}
+
+#leftside {
+    background-color: transparent;
+    border-radius: 8px;
+    background-image: linear-gradient(90deg, #1e1c1b 65%, #1e1c1b96 90%);
+    border: 1px solid #4A4837;
+    box-shadow: 0px 20px 10px -5px rgba(0, 0, 0, 0.5);
+    padding: 100px;
+}
+
+#leftside h1 {
+    font-size: 56px;
+    color: #ffffff;
+    margin-top: 0;
+}
+
+#leftside p {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 520px;
+    color: #cbcbcb;
+    line-height: 25px;
+}
+
+#leftside .twobuttons {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px; 
+}
+
+#leftside .button {
+    margin-top: 20px;
+    background-color: #ffa500; 
+    padding: 19px 36px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+#leftside .button:hover {
+    background-color: #ffeb3b; }
+
+#leftside .button1 {
+    margin-top: 20px;
+    background-color: white;
+    padding: 19px 36px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+#leftside .button1:hover {
+    background-color: #ffeb3b; 
+}
+
+
+@media (max-width: 1024px) {
+    #ready {
+        padding: 64px 96px;
+    }
+
+    #leftside {
+        padding: 80px;
+    }
+
+    #leftside h1 {
+        font-size: 48px;
+    }
+
+    #leftside p {
+        line-height: 22px;
+    }
+}
+
+@media (max-width: 768px) {
+    #ready {
+        padding: 48px 24px;
+    }
+
+    #leftside {
+        padding: 60px;
+    }
+
+    #leftside h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    #leftside p {
+        text-align: center;
+        margin: 20px auto;
+    }
+
+    .image {
+        background-size: cover;
+        background-position: center;
+    }
+
+    #leftside .twobuttons {
+        justify-content: center;
+    }
+
+    #leftside .button, 
+    #leftside .button1 {
+        padding: 15px 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    #leftside {
+        padding: 40px;
+    }
+
+    #leftside h1 {
+        font-size: 32px;
+    }
+
+    #leftside p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    #leftside .button, 
+    #leftside .button1 {
+        font-size: 14px;
+        padding: 12px 20px;
+    }
+}

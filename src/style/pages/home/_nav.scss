@@ -1,0 +1,73 @@
+.nav_left__logo{
+    margin-top: 10px;
+        @include Flexible(start, start, row, wrap, 30px);
+    width: 110px;
+    height: auto;
+   img{
+    @extend%base_img;
+   }
+
+}
+
+.nav_middle__pages{
+  
+    margin-top: 15px;
+    @media (max-width:768px) {
+        display: none;
+       }
+    ul{
+        @include Flexible(start, start, row, wrap, 30px);
+       
+        a{
+            outline: none;
+            text-decoration: none;
+            span{
+                color: $base_color;
+                font-size: 17px;
+                transition: 0.1s ease-in-out;
+                font-weight: 400;
+                &:hover{
+                    color: $orange;
+                  }
+            }
+         
+        }
+    }
+}
+.nav_right__log{
+    @include Flexible(center, end, row, wrap, 30px);
+    @media (max-width:768px) {
+        display: none;
+       }
+h1{
+  font-size: 16px;
+
+    a{
+        color: $base_color;
+        outline: none;
+        text-decoration: none;
+        transition: 0.1s ease-in-out;
+        &:hover{
+            color: $orange;
+        }
+    }
+}
+a{
+    button{
+        width: 100%;
+        color: $base_color;
+        border: none;
+        background-color: $orange;
+        padding: 14.4px 32.4px;
+        border-radius: 30px;
+        font-weight: 600;
+        font-size: 18px;
+        transition: 0.1s ease-in-out;
+        &:hover{
+            background-color: $yellow;
+        }
+    }
+}
+}
+
+
