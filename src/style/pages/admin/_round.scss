@@ -1,0 +1,106 @@
+.content{
+    margin-top: 40px;
+    h2{
+        font-size: 56px;
+        font-weight: 600;
+    }
+    p{
+        margin-top: 40px;
+        max-width: 370px;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 25px;
+    }
+    button{
+        margin-top: 30px;
+        background-color: $orange;
+        border: none;
+        padding: 10px 30px 10px 30px;
+        border-radius: 27px;
+        font-weight: 600;
+        font-size: 18px;
+        transition: 0.2s ease-in-out;
+        color: black;
+        &:hover{
+            background-color: $yellow;
+        }
+    }
+}
+#round_panel{
+    background-color: white;
+    padding: 150px 0;
+}
+// .feature{
+//    display: flex;
+//    flex-wrap: wrap;
+//    flex-direction: row;
+//     .imgs_paned_round{
+
+//         width: 70px;
+//         height: 70px;
+
+//         img{
+//             @extend %base_img;
+           
+//             border-radius: 50%;
+            
+//             background-color: $yellow;
+// padding: 17px;
+           
+//         }
+//         .imgs_paned_round_text{
+//             margin-top: 30px;
+//             min-width: 340px;
+//             min-height: 212.79px;
+//             width: 100%;
+//             height: 100%;
+//             h2{
+//                 font-size: 24px;
+//                 font-weight: 600;
+//             }
+//             p{
+//                 margin-top: 25px;
+//                 line-height: 20px;
+//             }
+            
+//         }
+//     }
+// }
+// .rounds_imgs_main{
+//     width: 350px;
+//     height: 220px;
+// }
+// .rounds_imgs_main1{
+//     width: 350px;
+
+//   height: 220px;
+//   margin-top: 60px;
+// }
+
+
+
+.feature-box {
+    
+   
+    border-radius: 8px;
+    padding: 15px;
+   
+}
+
+.feature-box img {
+    max-width: 70px;
+    margin-bottom: 10px;
+    @extend %base_img;
+    background-color: $yellow;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.feature-box h3 {
+    font-size: 24px;
+            font-weight: 600;
+}
+.feature-box   p{
+                   margin-top: 25px;
+                 line-height: 20px;
+                }

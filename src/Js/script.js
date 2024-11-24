@@ -1,24 +1,35 @@
+const AxiosInstance = axios.create({
+    baseURL: "http://localhost:3001/",
+    timeout: 4000,
 
-"use strict";
-
-document.getElementById('loginForm').addEventListener('submit', function (event) {
-    event.preventDefault();
-
-    const username = document.getElementById('username').value;
-    const password = document.getElementById('password').value;
-let count=0
-    if (username && password) {
-        const userData = {
-            username: username,
-            password: password,
-        };
-count++
-        localStorage.setItem('userLoginData', JSON.stringify(userData));
-        alert('User data saved!');
-    } else {
-        alert('Please fill in both fields.');
-    }
 });
 
 
+const fetchApiData=async (url,cb)=>{
+    await AxiosInstance.get(url).then((res) =>
+    {
+        cb(res.data)
+    }
+)
+}
+
+const LOGO_DATA = document.querySelector("#logo_api_panel");
+
+
+const RenderLogoData = async (data) => {
+    data && data.forEach((blog, index) => {
+        const LogoHtml = `  
+              <div id="logo_main_card__img">
+             <img src="${blog?.image?? ""}"
+               alt="" />
+             </div>`
+            LOGO_DATA.innerHTML += LogoHtml;
+
+    });
+}
+
+fetchApiData("/data",(data)=>{
+    RenderLogoData(data);
+}
+)
 
