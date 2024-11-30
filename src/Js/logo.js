@@ -17,6 +17,12 @@ const fetchApiData = async (url, cb) => {
     cb(res.data);
   });
 };
+
+
+///////////////////////////////////////////
+const DELETE_BTN= async ( data)=>{
+delete_button.forEach
+}
 ///////////////////////////////////////////
 const RenderFormData = async (data) => {
   data &&
@@ -60,3 +66,5 @@ FORM_CLICK_LOGO &&
     fileReader.readAsDataURL(INPUT_CLICK_LOGO.files[0]);
 
   });
+  ////////////////////////////////
+  const 
